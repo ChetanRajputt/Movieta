@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Utility Classes */
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+.l-style {
+    list-style: none;
+}
+
+.container .start {
+    background-color: rgb(209, 229, 235);
+}
+
+.play {
+    margin-top: 80px;
+    width: 100%;
+    height: 400px;
+}
+
+.play video,
+.play iframe {
+    margin-block: 3px;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+/* end */
+
+
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+}
+
+.navbar {
+    justify-content: space-between;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    height: 53px;
+    padding: 0 21px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.navbar .homeIcon i,
+.navbar .menuIcon i {
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .menuIcon i {
+    font-size: 25px;
+}
+
+
+.navbar .logo img {
+    width: 37px;
+}
+
+.navbar .logo span {
+    margin-left: 13px;
+    font-size: 35px;
+    color: white;
+    font-family: 'VT323', monospace;
+    word-spacing: 2rem;
+    text-shadow: 0px 2px 2px rgba(23, 226, 67, 0.4);
+    cursor: pointer;
+}
+
+.sub-navBar {
+    background-color: black;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sub-navBar ul li {
+    list-style: none;
+}
+
+.sub-navBar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.sub-navBar ul li a:hover {
+    color: gray;
+}
+
+.sub-navBar .search {
+    margin-left: 20px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 3px;
+    padding: 0px 3px;
+}
+
+.sub-navBar .search i {
+    margin-left: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+.sub-navBar .search input {
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.sub-navBar .search input::placeholder {
+    color: black;
+    font-size: 15px;
+    padding: 8px;
+}
+
+
+main {
+    width: 96%;
+    height: 350px;
+    box-shadow: 0px 0px 3px grey;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.change {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 248px;
+    left: 30px;
+    width: 80%;
+}
+
+.change i {
+    font-size: 44px;
+    font-weight: bold;
+    color: rgb(22, 42, 223);
+    padding: 0 12px;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+
+.change .cr {
+    margin-left: 1050px;
+}
+
+
+.container {
+    margin-block: 35px;
+    width: 100%;
+}
+
+.container h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.container .cards {
+    width: 100%;
+    margin-block: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .cards .card {
+    width: 150px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.container .cards .card img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+.container .cards .card img:hover {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    transform: scale(1.1);
+}
+
+/* footer start here... */
+
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer .company h3 {
+    color: black;
+    font-size: 45px;
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.footer .company h3:hover {
+    text-decoration: underline;
+}
+
+.footer .logos img {
+    width: 40px;
+}
+
+.footer p {
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .links ul a {
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.footer .links ul {
+    margin-block: 6px;
+}
+
+.footer .links ul a i {
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 5px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.footer .links ul a i:hover {
+    color: rgb(30, 204, 204);
+    transform: translate(40deg);
+}
+
+/* for Responsive  */
+@media screen and (max-width: 612px) {
+    .sub-navBar ul li a {
+        padding: 8px;
+    }
+
+    .sub-navBar .search {
+        margin-left: 15px;
+    }
+
+    .sub-navBar .search i {
+        font-size: 10px;
+    }
+
+    .sub-navBar .search input {
+        margin-left: 10px;
+    }
+
+    .change i {
+        color: rgb(255, 5, 5);
+    }
+
+    .change .cr {
+        margin-left: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 986px) {
+    .container .cards .card {
+        margin-block: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1220px) {
+    .change {
+        display: none;
+    }
+
+    main {
+        width: 90%;
+
+    }
+}
+
+
+@media screen and (max-width: 544px) {
+
+    .sub-navBar {
+        padding: 0 50px;
+    }
+
+    .sub-navBar ul li a {
+        font-size: 12px;
+    }
+
+    .sub-navBar .search {
+        display: none;
+    }
+
+    .navbar .homeIcon i,
+    .navbar .menuIcon i {
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 324px) {
+    .container .cards .card {
+        width: 250px;
+    }
+
+    main {
+        width: 90%;
+        height: 250px;
+    }
+
+}
