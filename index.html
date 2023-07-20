@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieta - Latest, Trending Movie Watch and download here</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar flex-align">
+            <div class="homeIcon">
+                <a href="index.html"><i class="bi bi-house"></i></a>
+            </div>
+            <div class="logo flex-align">
+                <img src="images/logo.png" alt=""> <span>Movieta</span>
+            </div>
+            <div class="menuIcon">
+                <i class="bi bi-moon" id="mode"></i>
+            </div>
+        </nav>
+
+        <div class="sub-navBar">
+            <ul class="flex-align">
+                <li><a href="#trending">New</a></li>
+                <li><a href="#block">Popular</a></li>
+                <li><a href="#action">Action</a></li>
+                <li><a href="#more">Comedy</a></li>
+            </ul>
+            <div class="search flex-align">
+                <i class="bi bi-search"></i>
+                <input type="text" id="" placeholder="Search for movies">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img src="banner/rana.jpg" alt="Images " class="slider">
+        <img src="banner/new.jpg" alt="Images " class="slider">
+        <img src="banner/Shershaah.webp" alt="Images " class="slider">
+        <img src="banner/omg2.avif" alt="Images " class="slider">
+        <img src="banner/chouhan.jpg" alt="Images " class="slider">
+        <img src="banner/adipusush.jpeg" alt="Images " class="slider">
+        <img src="banner/pushpa.jpg" alt="Images " class="slider">
+        <img src="banner/kgf.jpg" alt="Images " class="slider">
+        <img src="banner/krrish.jpg" alt="Images " class="slider">
+        <img src="banner/eternals1.webp" alt="Images " class="slider">
+        <img src="banner/jhon wick1.webp" alt="Images " class="slider">
+        <img src="banner/kota factory1.webp" alt="Images " class="slider">
+        <img src="banner/moon knight1.webp" alt="Images " class="slider">
+    </main>
+
+    <div class="change">
+        <i class="bi bi-chevron-left" onclick="goPrev()"></i>
+        <i class="bi bi-chevron-right cr" onclick="goNext()"></i>
+    </div>
+
+
+    <div class="container">
+        <h2>Trending in Movies</h2>
+        <div class="cards" id="trending">
+            <a href="adipurush.html" class="card">
+                <img src="poster/adipurush.jpg" alt="">
+            </a>
+            <a href="panther.html" class="card">
+                <img src="poster/images.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/airlift-movie-poster-4.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/avenger.webp" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/horror.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/king.jpg" alt="">
+            </a>
+        </div>
+
+        <h2>Blockbuster Movies</h2>
+        <div class="cards" id="block">
+            <a href="" class="card">
+                <img src="poster/master.avif" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/ant man.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/collage romance.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/eesho.jpeg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/collage romance.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/Jhon Wick.jpg" alt="">
+            </a>
+        </div>
+
+
+        <h2>Top Action Hits</h2>
+        <div class="cards" id="action">
+            <a href="" class="card">
+                <img src="poster/images.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/KGF.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/kota factory.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/money heist.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/the boys.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/thor love of thunder.jpg" alt="">
+            </a>
+        </div>
+
+        <h2>More Movies For You</h2>
+        <div class="cards" id="more">
+            <a href="" class="card">
+                <img src="poster/spiderman.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/uncharted.webp" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/money heist.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/Jhon Wick.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/horror.jpg" alt="">
+            </a>
+            <a href="" class="card">
+                <img src="poster/topgun.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="company">
+            <h3>Movieta</h3>
+        </div>
+        <div class="links">
+            <ul class="flex-align">
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+            </ul>
+        </div>
+        <div class="logos">
+            <img src="images/logo.png" alt="">
+        </div>
+        <p>&copy; 2023. Movieta. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
